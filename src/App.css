@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Ensure basic styles for the app */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styles for smooth transitions */
+html {
+    scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Hide scrollbar on body */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Set custom animation for messages */
+.message {
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+
+
+/* Animations */
+
+/* App.css or global stylesheet */
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .fade-in {
+    animation: fadeIn 1s ease-out;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Slide-in animation */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
-}
+  
+  .slide-in {
+    animation: slideIn 1s ease-out;
+  }
+  
+  /* Scale on hover */
+  .transform-scale {
+    transition: transform 0.3s ease;
+  }
+  
+  .transform-scale:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Button hover effect */
+  .btn-hover {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-hover:hover {
+    background-color: #2563eb; /* Darker blue */
+    transform: scale(1.05);
+  }
+  
+  /* Text animation */
+  .text-animate {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  .text-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .text-animate.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
