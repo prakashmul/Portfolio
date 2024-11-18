@@ -80,30 +80,47 @@ function App() {
         <section id="home" className="h-screen -mt-20 bg-gray-100 dark:bg-gray-900 flex items-center justify-center snap-start pt-20 fade-in">
           <div className="text-center">
             <h1 className="text-5xl font-bold mb-4 slide-in">Welcome to My Portfolio</h1>
-            <p className="text-xl slide-in">I am a [Your Profession]</p>
+            <p className="text-xl slide-in">I am a Web Developer</p>
           </div>
         </section>
 
-        <section id="about" className="h-screen bg-gray-100 dark:bg-gray-900 flex items-center justify-center snap-start py-20 fade-in">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 slide-in">About Me</h2>
-            <p className="text-lg slide-in">[A brief introduction about yourself]</p>
-          </div>
-        </section>
+        <section id="about" className="h-screen bg-gray-100 dark:bg-gray-900 flex flex-col items-center justify-center snap-start py-20 fade-in">
+  <div className="text-center max-w-3xl mx-auto">
+    <h2 className="text-3xl font-bold mb-8 slide-in">About Me</h2>
+    <p className="text-lg slide-in mb-6">
+      I am a web developer with expertise in the MERN stack (MongoDB, Express.js, React, Node.js). 
+      I have hands-on experience with tools like Flowbite, Tailwind CSS, and ShadCN, which help me create efficient, responsive, and visually appealing web applications.
+    </p>
+    <a 
+      href="/CV.pdf" // Replace with the actual path to your CV
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="bg-blue-500 dark:bg-blue-600 text-white py-2 px-6 rounded-md hover:bg-blue-600 dark:hover:bg-blue-700 slide-in"
+    >
+      View My CV
+    </a>
+  </div>
+</section>
+
 
         <section id="projects" className="h-screen bg-gray-100 dark:bg-gray-900 flex items-center justify-center snap-start py-20 fade-in">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 slide-in">Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-lg transform-scale">
-                <h3 className="text-xl font-bold mb-4">Project 1</h3>
-                <p>Description of project 1</p>
-                <a href="#" className="text-blue-500 dark:text-blue-400 hover:underline">View Project</a>
+                <h3 className="text-xl font-bold mb-4">E-Commerce Site</h3>
+                <p>A responsive eCommerce website built with the MERN stack (MongoDB, Express.js, React, Node.js). Includes features like product browsing, a secure cart, payment integration, and user authentication</p>
+                <a href="https://github.com/prakashmul/Ecommerce" className="text-blue-500 dark:text-blue-400 hover:underline">View Project</a>
               </div>
               <div className="bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-lg transform-scale">
-                <h3 className="text-xl font-bold mb-4">Project 2</h3>
-                <p>Description of project 2</p>
-                <a href="#" className="text-blue-500 dark:text-blue-400 hover:underline">View Project</a>
+                <h3 className="text-xl font-bold mb-4">Our Store</h3>
+                <p>Our Store is a modern and responsive website designed for selling premium dry fruits. It offers a seamless browsing experience with an elegant design and user-friendly navigation.</p>
+                <a href="https://github.com/prakashmul/Our-Store" className="text-blue-500 dark:text-blue-400 hover:underline">View Project</a>
+              </div>
+              <div className="bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-lg transform-scale">
+                <h3 className="text-xl font-bold mb-4">TODO App</h3>
+                <p>A simple and efficient To-Do app built with JavaScript, designed to help users manage tasks effectively. It features task addition, deletion, and completion tracking with a clean and intuitive interface.</p>
+                <a href="https://github.com/prakashmul/todo-app" className="text-blue-500 dark:text-blue-400 hover:underline">View Project</a>
               </div>
             </div>
           </div>
@@ -153,7 +170,7 @@ function App() {
 
       <footer className="bg-gray-800 dark:bg-gray-900 text-white py-6">
         <div className="text-center max-w-6xl mx-auto px-4">
-          <p className="text-sm">&copy; 2024 Your Name. All rights reserved.</p>
+          <p className="text-sm">&copy; 2024 Prakash Mul. All rights reserved.</p>
         </div>
       </footer>
     </div>
