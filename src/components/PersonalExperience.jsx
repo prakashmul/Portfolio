@@ -7,7 +7,7 @@ const PersonalExperience = () => {
   const experienceData = {
     title: "Professional Experience",
     position: "Internship",
-    duration: "March 2024 – September 2024 y· MERN Stack · Centegic Technology Pvt. Ltd · Kathmandu, Nepal",
+    duration: "March 2024 – September 2024 · MERN Stack · Centegic Technology Pvt. Ltd · Kathmandu, Nepal",
     achievements: [
       "Developed and deployed a full-stack web application using MongoDB, Express.js, React.js, and Node.js",
       "Fixed bugs and enhanced features based on user feedback during the internship",
