@@ -7,7 +7,7 @@ const PersonalExperience = () => {
   const experienceData = {
     title: "Professional Experience",
     position: "Internship",
-    duration: "Jan 2025 – July 2024 | Posuh 2081 – Ashadh 2082 · MERN Stack · Kathmandu, Nepal",
+    duration: "March 2024 – September 2024 y· MERN Stack · Centegic Technology Pvt. Ltd · Kathmandu, Nepal",
     achievements: [
       "Developed and deployed a full-stack web application using MongoDB, Express.js, React.js, and Node.js",
       "Fixed bugs and enhanced features based on user feedback during the internship",
