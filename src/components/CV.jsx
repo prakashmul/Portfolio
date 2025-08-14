@@ -16,11 +16,6 @@ export default function CV() {
     marginBottom: "30px",
   };
 
-  const paragraphStyle = {
-    fontSize: "1.1rem",
-    marginBottom: "30px",
-  };
-
   const imgStyle = {
     maxWidth: "100%",
     height: "auto",
@@ -31,7 +26,6 @@ export default function CV() {
   return (
     <div style={containerStyle}>
       <h1 style={headingStyle}>Curriculum Vitae</h1>
-      {/* <p style={paragraphStyle}>My CV</p> */}
       <img src={cvImage} alt="CV" style={imgStyle} />
     </div>
   );
